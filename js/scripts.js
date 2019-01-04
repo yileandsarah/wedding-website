@@ -222,7 +222,7 @@ $(document).ready(function () {
             $.post('https://script.google.com/macros/s/AKfycbyhteXsWq3wSCuGSfJjWrMfPMasTBzsM-ENQxhqUUk9XLuCJqk/exec', data)
                 .done(function (data) {
                     console.log(data);
-                    $('#alert-wrapper').html('');
+                    $('#alert-wrapper').html(''); 
                     $('#rsvp-modal').modal('show');
                 })
                 .fail(function (data) {
