@@ -184,20 +184,20 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ram and Antara's Wedding",
+            title: "Yi Le and Sarah's Wedding",
 
             // Event start date
-            start: new Date('Nov 27, 2017 10:00'),
+            start: new Date('Dec 14, 2019 10:30'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Nov 29, 2017 00:00'),
+            end: new Date('Dec 14, 2019 14:00'),
 
             // Event Address
-            address: 'ITC Fortune Park Hotel, Kolkata',
+            address: 'Toa Payoh Chinese Methodist Church',
 
             // Event Description
             description: "We can't wait to see you on our big day. For any queries or issues contact Mr. Amit Roy at +91 9435021804 or +91 7086018971."
@@ -219,7 +219,7 @@ $(document).ready(function () {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
             /***Changed RSVP script URL to Google***/
-            $.post('https://script.google.com/macros/s/AKfycbyhteXsWq3wSCuGSfJjWrMfPMasTBzsM-ENQxhqUUk9XLuCJqk/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbxwUNXE75jDo_xQDsGS5Dny4r_uPsbyaWn-k4Xf/exec', data)
                 .done(function (data) {
                     console.log(data);
                     $('#alert-wrapper').html(''); 
